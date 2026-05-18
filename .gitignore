@@ -7,18 +7,54 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# production
+/dist
+/build
+/out
+/dist-ssr
+
+# Vite cache
+/node_modules/.vite
+
+# local env files
+.env
+.env.*
+.local
+.local.*
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS generated files
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional npm cache
+.npm
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+yarn-error.log
+
+# pnpm
+.pnpm-debug.log
+.pnpm-store
